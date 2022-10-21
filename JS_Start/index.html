@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Java Script</title>
+	<link rel="stylesheet" href="css\main.css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header class="header" id="header">
+		<div class="container">
+			<a href="#" class="logo"></a>
+			<h1>Тренировка Javascript</h1>
+			<div class="tabs">
+				<h2>1.Табы</h2>
+				<div class="animals" id="animals">
+					<div class="animal" id="animal">
+						<div class="animal-btn" data-btn="1">Жираф</div>
+						<div class="animal-btn" data-btn="2">Олень</div>
+						<div class="animal-btn active" data-btn="3">Козочка</div>
+						<div class="animal-btn" data-btn="4">Бурундук</div>
+					</div>
+					<div class="abouts" id="abouts">
+						<div class="about" data-about="1">
+							<h3>
+								Жираф
+							</h3>
+							<p class="about__text">
+								Жира́ф (лат. Giraffa camelopardalis; от араб. زرافة‎ зарафа) — парнокопытное млекопитающее из семейства жирафовых. Является самым высоким наземным животным планеты.
+							</p>
+							<p class="about__text">
+								Жирафы являются исключительно травоядными животными. Строение тела и физиология позволяют им питаться листвой древесных крон — на высоте, где у них нет конкурентов. Из деревьев предпочитают акацию. Жираф охватывает ветвь длинным языком, тянет её ко рту и общипывает листья, оттягивая голову назад.
+							</p>
+						</div>
+						<div class="about" data-about="2">
+							<h3>
+								Олень
+							</h3>
+							<p class="about__text">
+								Оле́невые, или оле́ньи, или оле́ни (лат. Cervidae), — семейство парнокопытных млекопитающих, содержащее 51 современный вид. Оленевые распространены в Евразии, Северной и Южной Америке.
+							</p>
+							<p class="about__text">
+								Естественный ареал оленевых охватывает большие части Евразии и Америки. В Африке они встречаются лишь в северо-западной части, а в регионах к югу от Сахары отсутствуют. Человек завёз их в некоторые регионы, в которых они раньше не существовали, в том числе в Австралию, Новую Зеландию, Новую Гвинею и на некоторые острова Карибского бассейна. 
+							</p>
+						</div>
+						<div class="about active" data-about="3">
+							<h3>
+								Козочка
+							</h3>
+							<p class="about__text ">
+								Домашняя коза (лат. Capra hircus) — домашнее животное, вид парнокопытных из рода горные козлы (Capra) семейства полорогих.
+							</p>
+							<p class="about__text">
+								Коза — одно из первых прирученных животных. Одомашнена на Ближнем Востоке, приблизительно 9 тыс. лет назад. Предком домашней козы был дикий безоаровый козёл (Capra hircus aegagrus), до сегодняшнего дня встречающийся от греческих островов в Эгейском море через Малую Азию, Армянское нагорье и Переднюю Азию до Средней Азии.
+							</p>
+						</div>
+						<div class="about" data-about="4">
+							<h3>
+								Бурундук
+							</h3>
+							<p class="about__text">
+								Бурундук (-греч. τᾰμίᾱς «заведующий хозяйством», «эконом») — род грызунов из семейства беличьих. К бурундукам относятся 25 видов, большинство из которых обитает в Северной Америке
+							</p>
+							<p class="about__text">
+								Бурундуки распространены почти по всей Северной Америке от Северного полярного круга до центральной Мексики. Восточный, или восточноамериканский, бурундук (Tamias striatus) образует отдельный подрод, который встречается на востоке континента. 23 вида из подрода Neotamias обитают в западной части Северной Америки.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+		
+	</header>
+	<section class="second" id="second">
+		<div class="container">
+			<h2>2. Модальное окно</h2>
+			<div class="rain">
+				<button class="btn-open" id="btn-open">Вызвать дождь</button>
+			</div>
+			<div class="wrapper-modal" id="wrapper-modal">
+				<div class="overlay" id="overlay"></div>
+				<div class="modal-window" id="modal-window">
+					<h3 class="modal-window__title">Немного о дожде</h3>
+					<p class="modal-window__text">
+						До́ждь — атмосферные осадки, выпадающие из облаков в виде капель жидкости со средним диаметром от 0,5 до 6—7 мм[1].
+					</p>
+					<p class="modal-window__text">
+						Осенние дожди. Южная Эстония
+					</p>
+					<p class="modal-window__text">
+						Летний дождь в Санкт-Петербурге<br>Жидкие осадки с меньшим диаметром капель называются моросью[2]. Капли с диаметром больше 6—7 мм разбиваются в процессе падения из облаков на меньшие капли, поэтому даже при сильнейшем ливне диаметр капель не превышает 6—7 мм. Интенсивность дождя обычно составляет от 0,25 мм/ч (моросящий дождь) до 100 мм/ч (ливень)[1]. В Европе самый сильный ливень с интенсивностью 15,5 мм/мин был зафиксир ован в 1920 году в Германии[2].
+					</p>
+				</div>
+			</div>	
+		</div>
+	</section>
+	<footer class="footer" id="footer">
+		<div class="container">
+			<h2 class="footer__title">3. Слайдер</h2>
+			<div class="flex-wrapper">
+				<div class="slider-wrapper">
+					<div class="slide">
+						<img src="" alt="">Это слайд 2 с текстом
+					</div>
+					<div class="slide active">Это слайд 1 с текстом
+						<img src="" alt="">
+					</div>
+					<div class="slide">
+						<img src="" alt="">Это слайд 3 с текстом
+					</div>
+					<div class="dots-wrapper">
+						<span class="dot"></span>
+						<span class="dot active"></span>
+						<span class="dot"></span>
+					</div>
+				</div>
+				<div id="btn-prev"></div>
+				<div id="btn-next"></div>
+			</div>
+			<p class="footer__text">
+				Ну, что поделать, если мне все это удалось! :)
+			</p>
+		</div>
+	</footer>
+	<script src="js\main.js"></script>
+</body>
+</html>
